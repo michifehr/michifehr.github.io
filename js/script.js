@@ -22,7 +22,7 @@ window.addEventListener('load', function () {
             strings: [
                 "Ich heisse Michael Fehr",
                 "Ich bin gelernter Applikationsentwickler",
-                "Ich bin gewillt Neues zu Lernen"
+                "Ich bin gewillt Neues zu lernen"
             ],
             loop: true
         });

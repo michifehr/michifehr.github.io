@@ -1607,3 +1607,52 @@ select {
   opacity: 1;
   transform: translateY(0);
 }
+
+
+.webcard {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.webcard a {
+    display: block;
+    width: 100%;
+    position: relative;
+}
+
+.webcard img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: filter 0.3s ease;
+}
+
+.webcard .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.webcard:hover img {
+    filter: grayscale(100%);
+}
+
+.webcard:hover .overlay {
+    opacity: 1;
+}
