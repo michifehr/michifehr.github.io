@@ -1,38 +1,54 @@
+// =========================
+// PRELOADER (SAFE)
+// =========================
+window.addEventListener('load', function () {
+    const preloader = document.querySelector('.preloader');
 
-// Preloader
+    if (preloader) {
+        preloader.classList.add('opacity-0');
 
-window.addEventListener('load', function(){
-    document.querySelector('.preloader').classList.add('opacity-0');
-    setTimeout(function(){
-        document.querySelector('.preloader').style.display = 'none';
-    }, 1000);
+        setTimeout(function () {
+            preloader.style.display = 'none';
+        }, 1000);
+    }
+
+    // =========================
+    // ITYPED (SAFE)
+    // =========================
+    const typedElement = document.querySelector('.iTyped');
+
+    if (typedElement && window.ityped) {
+        window.ityped.init(typedElement, {
+            strings: [
+                "Ich heisse Michael Fehr",
+                "Ich bin gelernter Applikationsentwickler",
+                "Ich bin gewillt Neues zu Lernen"
+            ],
+            loop: true
+        });
+    }
 });
 
-// iTyped 
 
-window.ityped.init(document.querySelector('.iTyped'), {
-    strings: ["Ich heisse Michael Fehr", 'Ich bin gelernter Applikationsentwickler', 'Ich bin gewillt Neues zu Lernen'],
-    loop: true
-});
+// =========================
+// ASIDE NAVIGATION
+// =========================
+const nav = document.querySelector('.nav');
+const navList = nav ? nav.querySelectorAll('li') : [];
+const totalNavList = navList.length;
 
-
-// Aside Navbar
-
-const nav = document.querySelector('.nav'),
-    navList = nav.querySelectorAll('li'),
-    totalNavList = navList.length,
-    allSection = document.querySelectorAll('.section'),
-    totalSection = allSection.length;
+const allSection = document.querySelectorAll('.section');
+const totalSection = allSection.length;
 
 for (let i = 0; i < totalNavList; i++) {
     const a = navList[i].querySelector('a');
-    a.addEventListener('click', function(){
-        // remove back section class
+
+    a.addEventListener('click', function () {
+
         removeBackSectionClass();
 
         for (let j = 0; j < totalNavList; j++) {
             if (navList[j].querySelector('a').classList.contains('active')) {
-                // add back section class
                 addBackSectionClass(j);
             }
             navList[j].querySelector('a').classList.remove('active');
@@ -45,79 +61,107 @@ for (let i = 0; i < totalNavList; i++) {
         if (window.innerWidth < 1200) {
             asideSectionTogglerBtn();
         }
-
     });
 }
 
-function addBackSectionClass(num) 
-{
-    allSection[num].classList.add('back-section');
+
+// =========================
+// SECTION HELPERS
+// =========================
+function addBackSectionClass(num) {
+    if (allSection[num]) {
+        allSection[num].classList.add('back-section');
+    }
 }
 
-function removeBackSectionClass() 
-{
+function removeBackSectionClass() {
     for (let i = 0; i < totalSection; i++) {
         allSection[i].classList.remove('back-section');
     }
 }
 
-function updateNav(element) 
-{
-    for (let i = 0; i < totalNavList; i++) {
-        navList[i].querySelector('a').classList.remove('active');
-        const target = element.getAttribute('href').split('#')[1];
-        if (target === navList[i].querySelector('a').getAttribute('href').split('#')[1]) {
-            navList[i].querySelector('a').classList.add('active');
-        }
-    }
-}
-
-document.querySelector('.hire-me').addEventListener('click', function(){
-    const sectionIndex = this.getAttribute('data-section-index');
-    addBackSectionClass(sectionIndex);
-    showSection(this);
-    updateNav(this);
-    removeBackSectionClass();
-});
-
-function showSection(element) 
-{
+function showSection(element) {
     for (let i = 0; i < totalSection; i++) {
         allSection[i].classList.remove('active');
     }
 
     const target = element.getAttribute('href').split('#')[1];
+    const targetSection = document.querySelector('#' + target);
 
-    document.querySelector('#'+target).classList.add('active');
-}
-
-const navTogglerBtn = document.querySelector('.nav-toggler'),
-    aside = document.querySelector('.aside');
-
-navTogglerBtn.addEventListener('click', asideSectionTogglerBtn);
-
-function asideSectionTogglerBtn() 
-{
-    aside.classList.toggle('open');
-    navTogglerBtn.classList.toggle('open');
-    for (let i = 0; i < totalSection; i++) {
-        allSection[i].classList.toggle('open');
+    if (targetSection) {
+        targetSection.classList.add('active');
     }
 }
 
+
+// =========================
+// ASIDE TOGGLER (BURGER MENU)
+// =========================
+const navTogglerBtn = document.querySelector('.nav-toggler');
+const aside = document.querySelector('.aside');
+
+if (navTogglerBtn && aside) {
+    navTogglerBtn.addEventListener('click', asideSectionTogglerBtn);
+}
+
+function asideSectionTogglerBtn() {
+    if (aside) aside.classList.toggle('open');
+    if (navTogglerBtn) navTogglerBtn.classList.toggle('open');
+
+    for (let i = 0; i < totalSection; i++) {
+        if (allSection[i]) {
+            allSection[i].classList.toggle('open');
+        }
+    }
+}
+
+
+// =========================
+// NAV UPDATE (optional use)
+// =========================
+function updateNav(element) {
+    for (let i = 0; i < totalNavList; i++) {
+        const link = navList[i].querySelector('a');
+        if (link) {
+            link.classList.remove('active');
+
+            const target = element.getAttribute('href').split('#')[1];
+
+            if (target === link.getAttribute('href').split('#')[1]) {
+                link.classList.add('active');
+            }
+        }
+    }
+}
+
+
+// =========================
+// PDF MODAL
+// =========================
 function openPDF(pdfUrl) {
-document.getElementById("pdfFrame").src = pdfUrl;
-document.getElementById("pdfModal").style.display = "flex";
+    const frame = document.getElementById("pdfFrame");
+    const modal = document.getElementById("pdfModal");
+
+    if (frame && modal) {
+        frame.src = pdfUrl;
+        modal.style.display = "flex";
+    }
 }
 
 function closePDF() {
-document.getElementById("pdfModal").style.display = "none";
-document.getElementById("pdfFrame").src = "";
+    const frame = document.getElementById("pdfFrame");
+    const modal = document.getElementById("pdfModal");
+
+    if (frame && modal) {
+        modal.style.display = "none";
+        frame.src = "";
+    }
 }
 
-window.onclick = function(event) {
-const modal = document.getElementById("pdfModal");
-if (event.target === modal) {
-    closePDF();
-}
+window.onclick = function (event) {
+    const modal = document.getElementById("pdfModal");
+
+    if (modal && event.target === modal) {
+        closePDF();
+    }
 };
