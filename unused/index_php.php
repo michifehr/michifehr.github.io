@@ -1,0 +1,642 @@
+<?php
+require 'config.php';
+pruefeLogin();
+?>
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <title>Michael Fehr CV</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Template css Files -->
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+
+  <!-- Live Style Switcher - Demo Only -->
+  <link rel="stylesheet" class="alternate-style" title="pink" href="css/skins/pink.css" type="text/css">
+  <link rel="stylesheet" class="alternate-style" title="blue" href="css/skins/blue.css" type="text/css" disabled>
+  <link rel="stylesheet" class="alternate-style" title="green" href="css/skins/green.css" type="text/css" disabled>
+  <link rel="stylesheet" class="alternate-style" title="orange" href="css/skins/orange.css" type="text/css" disabled>
+  <link rel="stylesheet" class="alternate-style" title="yellow" href="css/skins/yellow.css" type="text/css" disabled>
+  <link rel="stylesheet" href="css/styleSwitcher.css" type="text/css">
+</head>
+
+<body>
+
+  <!-- Preloader -->
+  <div class="preloader">
+    <div class="loader">
+
+    </div>
+  </div>
+  <!-- Preloader End -->
+
+  <!-- Main Container -->
+  <div class="main-container">
+    <!-- Aside -->
+    <div class="aside">
+      <!-- Nav Toggler Btn -->
+      <div class="nav-toggler">
+        <span></span>
+      </div>
+      <div class="aside-inner">
+        <!-- Logo -->
+        <div class="logo">
+          <a href="#">Michael</a>
+        </div>
+        <!-- Nav -->
+        <ul class="nav">
+          <li><a href="#home" class="active"><i class="fa fa-home"></i> Home</a></li>
+          <li><a href="#about"><i class="fa fa-user"></i> Über mich</a></li>
+          <li><a href="#skills"><i class="fa fa-code">‌</i></i> Skills & Erfahrungen</a></li>
+          <li><a href="#services"><i class="fa fa-edit"></i> Zertifikate</a></li>
+          <li><a href="#contact"><i class="fa fa-comment"></i> Kontakt</a></li>
+          <a href="logout.php">Logout</a>
+        </ul>
+      </div>
+    </div>
+    <!-- Aside End -->
+    <!-- Main Content -->
+    <div class="main-content">
+
+      <!-- Home Section -->
+      <section class="home section active" id="home">
+        <div class="container">
+          <div class="intro">
+            <img src="images/about.jpg" alt="profile" class="shadow-dark">
+            <h1>Herzlichen Willkommen auf meiner Webseite!</h1>
+            <span class="iTyped"></span>
+            <div class="social-links">
+              <a href="https://www.instagram.com/michifehr/"><i class="fa fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/mifehr/"><i class="fa fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Home Section End -->
+
+      <!-- About Section -->
+      <section class="about section" id="about">
+        <div class="container">
+          <div class="row">
+            <div class="section-title padd-15">
+              <h2>Über mich</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="about-content padd-15">
+              <div class="row">
+                <div class="about-text padd-15">
+                  <h3>Ich bin Michael Fehr, gelernter <span>Applikationsentwickler </span> und im <span>Turnverein </span>sehr aktiv</h3>
+                  <p>Hallo! Ich bin Michael Fehr und ich habe eine Lehre als Applikationsentwickler bei der Swisscom Schweiz AG abgeschlossen. Nach meiner Lehre bin ich der Swisscom treu geblieben und durfte an verschiedensten Projekten mitarbeiten. Ich bin gewillt neue Dinge zu lernen. In Meiner Freizeit bin ich im Turnverein Müllheim aktiv, wo ich seit 2022 auch im Vorstand als Verantwortlicher der Jugendabteilung bin.</p>
+                </div>
+              </div>
+              <div class="row">
+
+
+              </div>
+              <div class="row">
+                <div class="personal-info padd-15">
+                  <div class="row">
+                    <div class="info-item padd-15">
+                      <p>Geburtstag : <span>6. August 2000</span></p>
+                    </div>
+                    <div class="info-item padd-15">
+                      <p>Wohnort : <span>Müllheim TG</span></p>
+                    </div>
+                    <div class="info-item padd-15">
+                      <p>Email : <span>mifehr@bluewin.ch</span></p>
+                    </div>
+                    <div class="info-item padd-15">
+                      <p>Mobile : <span>+41 79 355 16 94</span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> 
+          </div>
+        </div>    
+      </section>
+      <!-- About Section End -->
+
+      <!-- Skills Section -->
+      <section class="skills section" id="skills">
+        <div class="container">
+          <div class="row">
+            <div class="section-title padd-15">
+              <h2>Skills & Erfahrungen</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="skills-content padd-15">
+              <div class="row">
+                <div class="skills-text padd-15">
+                  <p>Im Laufe meiner Ausbildung und Berufstätigkeit habe ich mir fundierte Kenntnisse in verschiedenen Programmiersprachen, Tools und Arbeitsweisen angeeignet. Die folgende Übersicht zeigt meine technischen Fähigkeiten sowie persönliche Eigenschaften, die mich im Arbeitsalltag auszeichnen.</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="education padd-15">
+                  <h3 class="title">Ausbildung</h3>
+                  <div class="row">
+                    <div class="timeline-box padd-15">
+                      <div class="timeline shadow-dark">
+                        <!-- timeline Item -->
+                        <div class="timeline-item">
+                          <div class="circle-dot"></div>
+                          <h6 class="timeline-date"><i class="fa fa-calendar"></i> Feb 2021 - Mai 2021</h6>
+                          <h4 class="timeline-title">Rekrutenschule als Panzergrenadier</h4>
+                          <p class="timeline-text">Im Militär habe ich die Rekrutenschule als Panzergrenadier absolviert. Dabei erlernte ich Disziplin, Anstand, Pünktlichkeit und tragen von Verantwortung. Zudem konnte ich mein Französisch vertiefen. </p>
+                        </div>
+                        <!-- timeline Item End -->
+                        <!-- timeline Item -->
+                        <div class="timeline-item">
+                          <div class="circle-dot"></div>
+                          <h6 class="timeline-date"><i class="fa fa-calendar"></i> Aug 2016 - Aug 2020</h6>
+                          <h4 class="timeline-title">Berufsbildungsschule Winterthur</h4>
+                          <p class="timeline-text">Die Berufsschule habe ich mit der Schlussnote 4.6 abgeschlossen</p>
+                        </div>
+                        <!-- timeline Item End -->
+                        <!-- timeline Item -->
+                        <div class="timeline-item">
+                          <div class="circle-dot"></div>
+                          <h6 class="timeline-date"><i class="fa fa-calendar"></i> Aug 2014 - Aug 2016</h6>
+                          <h4 class="timeline-title">Sekundarschule Typ E</h4>
+                          <p class="timeline-text">Die Sekundarschule habe ich mit der Schlussnote 5.0 in der höchsten Stufe abgeschlossen</p>
+                        </div>
+                        <!-- timeline Item End -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="experience padd-15">
+                  <h3 class="title">Berufserfahrungen</h3>
+                  <div class="row">
+                    <div class="timeline-box padd-15">
+                      <div class="timeline shadow-dark">
+                        <!-- timeline Item -->
+                        <div class="timeline-item">
+                          <div class="circle-dot"></div>
+                          <h6 class="timeline-date"><i class="fa fa-calendar"></i> Apr 2021 - Feb 2025</h6>
+                          <h4 class="timeline-title">DevOps Engineer I</h4>
+                          <ul class="timeline-text">
+                            <li>Entwicklung verschiedener IP-Adressmanagement-Skripte für Monitoring und Alerting
+                              sowie für Bereinigungszwecke</li>
+                            <li>Automatisierung von komplexen End-to-End-Tests (E2E) für B2B Connectivity
+                              Services mit Ruby zur Qualitätssicherung(CICD)</li>
+                            <li>Mitentwicklung eines Python-basierten Zertifikats-Webservices, einschließlich
+                              Implementierung von Monitoring, Alerting und Erfassung wichtiger Kennzahlen zur
+                              Leistungsüberwachung</li>
+                            <li>Weiterentwicklung einer Inventarseite mit JavaScript und Angular, einschließlich
+                              neuer Optionen, Strukturen, Ansichten und Performance-Optimierungen.</li>
+                            <li>Installation und Verkabelung von Servern, Switches und Netzwerkkomponenten im
+                                Labor. </li>
+                            <li>Arbeit in einem agilen DevOps Team</li>
+                            <li>Übernahme von Pikett-Diensten</li>
+                          </ul>
+                        </div>
+                        <!-- timeline Item End -->
+                        <!-- timeline Item -->
+                        <div class="timeline-item">
+                          <div class="circle-dot"></div>
+                          <h6 class="timeline-date"><i class="fa fa-calendar"></i>Aug 2020 - Apr 2021</h6>
+                          <h4 class="timeline-title">ICT-STarter</h4>
+                          <p class="timeline-text">Teilautomatisierung von Massenänderungen mithilfe von Python-Skripten</p>
+                        </div>
+                        <!-- timeline Item End -->
+                        <!-- timeline Item -->
+                        <div class="timeline-item">
+                          <div class="circle-dot"></div>
+                          <h6 class="timeline-date">
+                            <i class="fa fa-calendar"></i>Aug 2016 - Aug 2020</h6>
+                          <h4 class="timeline-title">
+                            Lehre als Informatiker in Fachrichtung Applikationsentwickler (Swisscom Schweiz AG)
+                          </h4>
+                          <ul class="timeline-text">
+                            <li><strong>Mgmt Infrastructure (SystemCenter & Entwicklung)</strong></li>
+                              <ul>Grundkenntnisse in Informatik, PowerShell und Windows Server</ul>
+                            <li><strong>3rd Level Support für myCloud</strong></li>
+                              <ul>Black-Box- und White-Box-Testing, Kundenkontakt</ul>
+                            <li><strong>CDN Support</strong></li>
+                              <ul>Implementierung von CDN-Aufträgen, Erstellung und Erneuerung von Zertifikaten,
+                                Anwendung von HTML, CSS und JavaScript</ul>
+                            <li><strong>API-Integration für Software-Netzwerke</strong></li>
+                              <ul>API-Abfragen und Datenverarbeitung mit PHP, JWT-Authorization, Bereitstellung
+                                einer REST API, Erstellung eines Cisco DNA Center Simulators</ul>
+                          </ul>
+                        </div>
+                        <!-- timeline Item End -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h3 class="skills_title">Programmiersprachen und Skripting</h3>
+              <div class="row">
+                <div class="skills padd-15">
+                  <div class="row">
+                    <div class="skill-item padd-15">
+                      <h5>Python</h5>
+                      <div class="progress">
+                        <div class="progress-in" style="width: 70%;"></div>
+                        <div class="skill-porcent">
+                          70%
+                        </div>
+                      </div>
+                    </div>
+                    <div class="skill-item padd-15">
+                      <h5>Java</h5>
+                      <div class="progress">
+                        <div class="progress-in" style="width: 55%;"></div>
+                        <div class="skill-porcent">
+                          55%
+                        </div>
+                      </div>
+                    </div>
+                    <div class="skill-item padd-15">
+                      <h5>PHP</h5>
+                      <div class="progress">
+                        <div class="progress-in" style="width: 70%;"></div>
+                        <div class="skill-porcent">
+                          70%
+                        </div>
+                      </div>
+                    </div>
+                    <div class="skill-item padd-15">
+                      <h5>Bash</h5>
+                      <div class="progress">
+                        <div class="progress-in" style="width: 60%;"></div>
+                        <div class="skill-porcent">
+                          60%
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="skills padd-15">
+                  <div class="row">
+                    <div class="skill-item padd-15">
+                      <h5>Ruby</h5>
+                      <div class="progress">
+                        <div class="progress-in" style="width: 40%;"></div>
+                        <div class="skill-porcent">
+                          40%
+                        </div>
+                      </div>
+                    </div>
+                    <div class="skill-item padd-15">
+                      <h5>HTML</h5>
+                      <div class="progress">
+                        <div class="progress-in" style="width: 90%;"></div>
+                        <div class="skill-porcent">
+                          90%
+                        </div>
+                      </div>
+                    </div>
+                    <div class="skill-item padd-15">
+                      <h5>CSS</h5>
+                      <div class="progress">
+                        <div class="progress-in" style="width: 80%;"></div>
+                        <div class="skill-porcent">
+                          80%
+                        </div>
+                      </div>
+                    </div>
+                    <div class="skill-item padd-15">
+                      <h5>Javascript</h5>
+                      <div class="progress">
+                        <div class="progress-in" style="width: 70%;"></div>
+                        <div class="skill-porcent">
+                          70%
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <h3 class="skills_title">Tools</h3>
+              <div class="row">
+                <div class="skills padd-15">
+                  <div class="row">
+                    <div class="skill-item padd-15">
+                      <h5>Git</h5>
+                      <div class="progress">
+                        <div class="progress-in" style="width: 75%;"></div>
+                        <div class="skill-porcent">
+                          75%
+                        </div>
+                      </div>
+                    </div>
+                    <div class="skill-item padd-15">
+                      <h5>Jira</h5>
+                      <div class="progress">
+                        <div class="progress-in" style="width: 85%;"></div>
+                        <div class="skill-porcent">
+                          85%
+                        </div>
+                      </div>
+                    </div>
+                    <div class="skill-item padd-15">
+                      <h5>Grafana</h5>
+                      <div class="progress">
+                        <div class="progress-in" style="width: 60%;"></div>
+                        <div class="skill-porcent">
+                          60%
+                        </div>
+                      </div>
+                    </div>
+                    <div class="skill-item padd-15">
+                      <h5>Docker</h5>
+                      <div class="progress">
+                        <div class="progress-in" style="width: 65%;"></div>
+                        <div class="skill-porcent">
+                          65%
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="skills padd-15">
+                  <div class="row">
+                    <div class="skill-item padd-15">
+                      <h5>Jenkins</h5>
+                      <div class="progress">
+                        <div class="progress-in" style="width: 55%;"></div>
+                        <div class="skill-porcent">
+                          55%
+                        </div>
+                      </div>
+                    </div>
+                    <div class="skill-item padd-15">
+                      <h5>Microsoft Office Produkte</h5>
+                      <div class="progress">
+                        <div class="progress-in" style="width: 90%;"></div>
+                        <div class="skill-porcent">
+                          90%
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h3 class="skills_title">Weitere persönliche Merkmale</h3>
+                <div class="bubble-wrapper">
+                  <div class="skill-bubble">Kommunikativ</div>
+                  <div class="skill-bubble">Organisiert</div>
+                  <div class="skill-bubble">Teamfähig</div>
+                  <div class="skill-bubble">Kritikfähig</div>
+                  <div class="skill-bubble">Umgänglich</div>
+                  <div class="skill-bubble">Ehrlich</div>
+                  <div class="skill-bubble">Motiviert</div>                  
+                </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Skills Section End -->
+
+      <!-- Zertifikate Section -->
+      <section class="service section" id="services">
+        <div class="container">
+          <div class="row">
+            <div class="section-title padd-15">
+              <h2>Zertifikate</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="about-text padd-15">
+              <p>Im Laufe meiner beruflichen und persönlichen Entwicklung habe ich verschiedene Zertifikate erworben, die meine Fachkenntnisse und Kompetenzen in unterschiedlichen Bereichen dokumentieren. Nachfolgend finden Sie eine Übersicht meiner wichtigsten Qualifikationen, die meine Expertise unterstreichen und meine kontinuierliche Weiterbildung belegen.</p>
+            </div>
+          </div>
+      
+          <!-- AWS -->
+          <div class="anbieter-block padd-15">
+            <h3>AWS</h3>
+            <div class="row zertifikate-container">
+              <div class="service-item padd-15">
+                <div class="service-item-inner zertifikat" onclick="openPDF('pdf/AWS_Cloud_Practitioner_Essentials_Course_Completion_Certificate.pdf')">
+                  <h4>AWS Cloud Practitioner Essentials</h4>
+                  <p>Abgeschlossen: März 2022</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Programming Hub -->
+          <div class="anbieter-block padd-15">
+            <h3>Programming Hub</h3>
+            <div class="row zertifikate-container">
+              <div class="service-item padd-15">
+                <div class="service-item-inner zertifikat" onclick="openPDF('pdf/HTML_Michael_Fehr_programming_hub.pdf')">
+                  <h4>HTML</h4>
+                  <p>Abgeschlossen: Oktober 2024</p>
+                </div>
+              </div>
+              <div class="service-item padd-15">
+                <div class="service-item-inner zertifikat" onclick="openPDF('pdf/CSS_Michael_Fehr_programming_hub.pdf')">
+                  <h4>CSS</h4>
+                  <p>Abgeschlossen: Oktober 2024</p>
+                </div>
+              </div>
+              <div class="service-item padd-15">
+                <div class="service-item-inner zertifikat" onclick="openPDF('pdf/JavaScript_3_Michael_Fehr_programming_hub.pdf')">
+                  <h4>Java Script 3</h4>
+                  <p>Abgeschlossen: Oktober 2024</p>
+                </div>
+              </div>
+              <div class="service-item padd-15">
+                <div class="service-item-inner zertifikat" onclick="openPDF('pdf/JavaScript_Advanced_Michael_Fehr_programming_hub.pdf')">
+                  <h4>Java Script Advanced</h4>
+                  <p>Abgeschlossen: Oktober 2024</p>
+                </div>
+              </div>
+              <div class="service-item padd-15">
+                <div class="service-item-inner zertifikat" onclick="openPDF('pdf/Git_1_Michael_Fehr_programming_hub.pdf')">
+                  <h4>Git</h4>
+                  <p>Abgeschlossen: Oktober 2024</p>
+                </div>
+              </div>
+              <div class="service-item padd-15">
+                <div class="service-item-inner zertifikat" onclick="openPDF('pdf/Docker_Michael_Fehr_programming_hub.pdf')">
+                  <h4>Docker</h4>
+                  <p>Abgeschlossen: Oktober 2024</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Coddy Tech -->
+          <div class="anbieter-block padd-15">
+            <h3>Coddy Tech</h3>
+            <div class="row zertifikate-container">
+              <div class="service-item padd-15">
+                <div class="service-item-inner zertifikat" onclick="openPDF('pdfs/Practice_Basic_Concepts_JavaScript_CoddyTech.pdf')">
+                  <h4>Practice Basic Concepts Java Script</h4>
+                  <p>Abgeschlossen: März 2025</p>
+                </div>
+              </div>
+              <div class="service-item padd-15">
+                <div class="service-item-inner zertifikat" onclick="openPDF('pdfs/SQL_for_beginners_CoddyTech.pdf')">
+                  <h4>SQL for beginners</h4>
+                  <p>Abgeschlossen: März 2025</p>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Cambridge -->
+          <div class="anbieter-block padd-15">
+            <h3>Cambridge</h3>
+            <div class="row zertifikate-container">
+              <div class="service-item padd-15">
+                <div class="service-item-inner zertifikat" onclick="openPDF('pdfs/Cambridge_First_Certificate.pdf')">
+                  <h4>Cambridge English First</h4>
+                  <p>Abgeschlossen: Januar 2020</p>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Weitere Anbieter... -->
+        </div>
+      </section>
+      
+          <!-- Weitere Anbieter... -->
+        </div>
+      </section>
+      <!-- Zertifikate Section End -->
+
+      <!-- PDF Modal -->
+      <div id="pdfModal" class="modal">
+        <div class="modal-content">
+          <span class="close-btn" onclick="closePDF()">&times;</span>
+          <iframe id="pdfFrame" src="" frameborder="0"></iframe>
+        </div>
+      </div>
+
+
+      <!-- Contact Section -->
+      <section class="contact section" id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="section-title padd-15">
+              <h2>Kontaktiere mich</h2>
+            </div>
+          </div>
+          <div class="row">
+            <!-- contact-info-item  -->
+            <div class="contact-info-item padd-15">
+              <div class="icon">
+                <i class="fa fa-phone"></i>
+                <h4>Ruf mich an</h4>
+                <p>+41 79 355 16 94</p>
+              </div>
+            </div>
+            <!-- contact-info-item end -->
+            <!-- contact-info-item  -->
+            <div class="contact-info-item padd-15">
+              <div class="icon">
+                <i class="fa fa-envelope"></i>
+                <h4>Email</h4>
+                <p>mifehr@bluewin.ch</p>
+              </div>
+            </div>
+            <!-- contact-info-item end -->
+          </div>
+
+          <!-- Contact Form -->
+          <div class="row">
+            <form action="#" class="contact-form padd-15">
+              <div class="row">
+                <div class="form-item col-6 padd-15">
+                  <div class="form-group">
+                    <input type="text" name="" class="form-control" placeholder="Name *">
+                  </div>
+                </div>
+                <div class="form-item col-6 padd-15">
+                  <div class="form-group">
+                    <input type="email" name="" class="form-control" placeholder="Email *">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-item col-12 padd-15">
+                  <div class="form-group">
+                    <input type="text" name="" class="form-control" placeholder="Betreff *">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-item col-12 padd-15">
+                  <div class="form-group">
+                    <textarea class="form-control" name="" placeholder="Deine Nachricht... "></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 padd-15">
+                  <button type="submit" class="btn">Senden</button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <!-- Contact Form End -->
+        </div>
+      </section>
+      <!-- Contact Section End -->
+
+    </div>
+    <!-- Main Content End -->
+  </div>
+  <!-- Main Container End -->
+
+  <!-- Lightbox -->
+  <div class="lightbox">
+    <div class="lightbox-content">
+      <div class="lightbox-close">&times;</div>
+      <img src="" alt="" onclick="nextItem()" class="lightbox-img">
+      <div class="lightbox-caption">
+        <div class="caption-text"></div>
+        <div class="caption-counter"></div>
+      </div>
+    </div>
+    <div class="lightbox-controls">
+      <div class="prev-item" onclick="prevItem()"><i class="fa fa-angle-left"></i></div>
+      <div class="next-item" onclick="nextItem()"><i class="fa fa-angle-right"></i></div>
+    </div>
+  </div>
+  <!-- Lightbox End -->
+
+  <!-- Live Style Switcher - Demo Only -->
+  <div class="style-switcher">
+    <div class="toggle-style-switcher">
+      <i class="fa fa-cog fa-spin"></i>
+    </div>
+    <h5>Style Switcher</h5>
+    <ul>
+      <li><a href="javascript:void(0);" title="pink" style="background-color: #ec1839;" onclick="setActiveStyle('pink')"></a></li>
+      <li><a href="javascript:void(0);" title="blue" style="background-color: #2196f3;" onclick="setActiveStyle('blue')"></a></li>
+      <li><a href="javascript:void(0);" title="orange" style="background-color: #fa5b0f;" onclick="setActiveStyle('orange')"></a></li>
+      <li><a href="javascript:void(0);" title="yellow" style="background-color: #ffb400;" onclick="setActiveStyle('yellow')"></a></li>
+      <li><a href="javascript:void(0);" title="green" style="background-color: #72b626;" onclick="setActiveStyle('green')"></a></li>
+    </ul>
+    <h5>Body Skin</h5>
+    <label>
+      <input type="radio" class="body-skin" name="body-skin" value="light" checked="true"> Light
+    </label>
+    <label>
+      <input type="radio" class="body-skin" name="body-skin" value="dark"> Dark
+    </label>
+  </div>
+  <!-- Live Style Switcher - Demo Only End -->
+
+  <!-- Plugins -->
+  <script src="js/ityped.min.js"></script>
+  <!-- Template js -->
+  <script src="js/script.js"></script>
+  <!-- Live Style Js - Demo Only -->
+  <script src="js/styleSwitcher.js"></script>
+</body>
+
+</html>
