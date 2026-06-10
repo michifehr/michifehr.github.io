@@ -1,11 +1,11 @@
 .aside .logo a::before{
-    border-top: 4px solid #ec1839;
-    border-left: 4px solid #ec1839;
+    border-top: 4px solid #5170ff;
+    border-left: 4px solid #5170ff;
 }
 
 .aside .logo a::after{
-    border-right: 4px solid #ec1839;
-    border-bottom: 4px solid #ec1839;
+    border-right: 4px solid #5170ff;
+    border-bottom: 4px solid #5170ff;
 }
 
 .aside .nav li a:hover, 
@@ -22,7 +22,7 @@ body.dark .portfolio .portfolio-filter button.active,
 .service .service-item .service-item-inner .icon .fa,
 body.dark .aside .nav li a.active,
 .aside .nav li a.active{
-    color: #ec1839;
+    color: #5170ff;
 }
 
 .btn,
@@ -38,9 +38,9 @@ body.dark .aside .nav li a.active,
 .aside .nav-toggler span::after,
 .bubble-wrapper .skill-bubble,
 .home .intro .social-links a{
-    background-color: #ec1839;
+    background-color: #5170ff;
 }
 
 .portfolio .portfolio-filter button.active{
-    border-color: #ec1839;
+    border-color: #5170ff;
 }
