@@ -1449,15 +1449,26 @@ select {
 }
 
 /* Abschnittsüberschrift */
-.section-title h2 {
+.section-title h1 {
+    font-size: 4em;
+    text-align: center;
+    color: #302e4d;
+  }
+
+ /* Mobile */
+@media (max-width: 768px){
+.section-title h1 {
     font-size: 2em;
     text-align: center;
-    margin-bottom: 40px;
-  }
+    color: #302e4d;
+    }
+}
+    
   
   /* Anbieter-Gruppen */
   .anbieter-block {
     margin-top: 40px;
+    color: #302e4d;
   }
   
   .anbieter-block h3 {
@@ -1465,7 +1476,7 @@ select {
     font-size: 1.5em;
     border-bottom: 2px solid #ddd;
     padding-bottom: 8px;
-    color: #333;
+    color: #302e4d;
   }
   
   /* Kachel-Container (innerhalb jeder Gruppe) */
@@ -1509,7 +1520,7 @@ select {
   .service-item-inner h4 {
     margin-bottom: 8px;
     font-size: 1.1em;
-    color: #333;
+    color: #302e4d;
   }
   
   .service-item-inner p {
