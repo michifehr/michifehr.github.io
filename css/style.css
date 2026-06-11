@@ -447,12 +447,10 @@ select {
     object-fit: cover;
     z-index: 0;
     opacity: 0.5;
-    /* nur hier Transparenz! */
 }
 
 .home {
     min-height: 100vh;
-    display: -ms-flexbox;
     display: flex;
     opacity: 1;
 }
@@ -470,37 +468,31 @@ select {
     font-size: 60px;
 }
 
-/* Desktop */
+/* gemeinsamer Stil für alle Screens */
 .home .intro img {
-    height: 400px;
-    width: 400px;
     border-radius: 50%;
     display: inline-block;
-    border: 8px solid #ffffff;
+    border: 8px solid #fff;
     box-shadow: 0 10px 500px #5170ff;
 }
 
-/* Tablet */
+/* Größen nur responsiv ändern */
+.home .intro img {
+    width: 400px;
+    height: 400px;
+}
+
 @media (max-width: 950px) {
     .home .intro img {
-        height: 350px;
         width: 350px;
-        border-radius: 50%;
-        display: inline-block;
-        border: 8px solid #ffffff;
-        box-shadow: 0 10px 500px #5170ff;
+        height: 350px;
     }
 }
 
-/* Mobile */
 @media (max-width: 768px) {
     .home .intro img {
-        height: 200px;
         width: 200px;
-        border-radius: 50%;
-        display: inline-block;
-        border: 8px solid #ffffff;
-        box-shadow: 0 10px 500px #5170ff;
+        height: 200px;
     }
 
     #h1_name {
@@ -519,10 +511,8 @@ select {
 .home .intro span {
     font-size: 16px;
     font-weight: 500;
-    margin: 0;
     line-height: 22px;
     color: #504e70;
-
 }
 
 .home .intro .social-links {
@@ -535,42 +525,23 @@ select {
     display: inline-block;
     text-align: center;
     line-height: 35px;
-    color: #ffffff;
+    color: #fff;
     margin: 0 4px;
     border-radius: 40%;
     text-decoration: none;
-    -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
 
 .home .intro .social-links a:hover {
-    -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
 
 .ityped-cursor {
-    /* font-size: 2.2rem; */
-    opacity: 1;
-    -webkit-animation: blink 0.3s infinite;
-    -moz-animation: blink 0.3s infinite;
-    animation: blink 0.3s infinite;
-    animation-direction: alternate;
+    animation: blink 0.3s infinite alternate;
 }
 
 @keyframes blink {
-    100% {
-        opacity: 0;
-    }
-}
-
-@-webkit-keyframes blink {
-    100% {
-        opacity: 0;
-    }
-}
-
-@-moz-keyframes blink {
-    100% {
+    to {
         opacity: 0;
     }
 }
@@ -1673,9 +1644,15 @@ select {
 
 .webcard {
     position: relative;
-    width: 100%;
+    flex: 1 1 calc(50% - 20px);
     overflow: hidden;
     border-radius: 10px;
+}
+
+.webcards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .webcard a {
@@ -1702,7 +1679,7 @@ select {
     justify-content: center;
     background: rgba(0, 0, 0, 0.4);
     color: white;
-    font-size: 4rem;
+    font-size: 2rem;
     font-weight: bold;
     opacity: 0;
     transition: opacity 0.3s ease;
@@ -1714,4 +1691,13 @@ select {
 
 .webcard:hover .overlay {
     opacity: 1;
+}
+
+.full-width-widget {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+}
+
+.full-width-widget .commonninja_component {
+    width: 100% !important;
 }
