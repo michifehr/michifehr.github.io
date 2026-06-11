@@ -44,7 +44,7 @@ Die Website wurde erstellt, um:
 
 Kontaktaufnahme ist über das Kontaktformular auf meiner Website möglich:
 
-🌐 [https://www.michifehr.ch/contact](https://www.michifehr.ch/contact)
+🌐 [https://www.michifehr.ch/#contact](https://www.michifehr.ch/#contact)
 
 ----------
 
