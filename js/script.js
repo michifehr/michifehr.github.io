@@ -169,36 +169,36 @@ window.onclick = function (event) {
 // =========================
 // CONTACT FORM
 // =========================
-  const form = document.getElementById("contact-form");
+const form = document.getElementById("contact-form");
 
 form.addEventListener("submit", async (e) => {
-  e.preventDefault();
+    e.preventDefault();
 
-  const data = {
-    name: form.querySelector('input[name="name"]').value,
-    email: form.querySelector('input[name="email"]').value,
-    subject: form.querySelector('input[name="subject"]').value,
-    message: form.querySelector('textarea[name="message"]').value
-  };
+    const data = {
+        name: form.querySelector('input[name="name"]').value,
+        email: form.querySelector('input[name="email"]').value,
+        subject: form.querySelector('input[name="subject"]').value,
+        message: form.querySelector('textarea[name="message"]').value
+    };
 
-  try {
-    const response = await fetch("https://formspree.io/f/xaqzbaqj", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        "Accept": "application/json"
-      },
-      body: JSON.stringify(data)
-    });
+    try {
+        const response = await fetch("https://formspree.io/f/xaqzbaqj", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                "Accept": "application/json"
+            },
+            body: JSON.stringify(data)
+        });
 
-    if (response.ok) {
-      alert("Nachricht erfolgreich gesendet!");
-      form.reset();
-    } else {
-      alert("Fehler beim Senden der Nachricht.");
+        if (response.ok) {
+            alert("Nachricht erfolgreich gesendet!");
+            form.reset();
+        } else {
+            alert("Fehler beim Senden der Nachricht.");
+        }
+    } catch (error) {
+        alert("Netzwerkfehler.");
+        console.error(error);
     }
-  } catch (error) {
-    alert("Netzwerkfehler.");
-    console.error(error);
-  }
 });

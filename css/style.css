@@ -472,8 +472,8 @@ select {
 
 /* Desktop */
 .home .intro img {
-    height: 500px;
-    width: 500px;
+    height: 400px;
+    width: 400px;
     border-radius: 50%;
     display: inline-block;
     border: 8px solid #ffffff;
