@@ -21,8 +21,9 @@ window.addEventListener('load', function () {
         window.ityped.init(typedElement, {
             strings: [
                 "Ich heisse Michael Fehr",
-                "Ich bin gelernter Applikationsentwickler",
-                "Ich bin gewillt Neues zu lernen"
+                "Neugierig. Engagiert. Unkompliziert.",
+                "Technologie entwickelt sich – ich mich auch",
+                "Ich verwandle Ideen in funktionierende Lösungen"
             ],
             loop: true
         });
