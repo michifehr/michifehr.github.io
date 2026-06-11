@@ -1697,22 +1697,19 @@ select {
     left: 0;
     right: 0;
     bottom: 0;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     background: rgba(0, 0, 0, 0.4);
     color: white;
-    font-size: 1.2rem;
+    font-size: 4rem;
     font-weight: bold;
-
     opacity: 0;
     transition: opacity 0.3s ease;
 }
 
 .webcard:hover img {
-    filter: grayscale(100%);
+    filter: grayscale(40%);
 }
 
 .webcard:hover .overlay {
