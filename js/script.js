@@ -1,5 +1,5 @@
 // =========================
-// PRELOADER (SAFE)
+// PRELOADER
 // =========================
 window.addEventListener('load', function () {
     const preloader = document.querySelector('.preloader');
@@ -13,7 +13,7 @@ window.addEventListener('load', function () {
     }
 
     // =========================
-    // ITYPED (SAFE)
+    // ITYPED
     // =========================
     const typedElement = document.querySelector('.iTyped');
 
