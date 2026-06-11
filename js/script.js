@@ -20,7 +20,6 @@ window.addEventListener('load', function () {
     if (typedElement && window.ityped) {
         window.ityped.init(typedElement, {
             strings: [
-                "Ich heisse Michael Fehr",
                 "Neugierig. Engagiert. Unkompliziert.",
                 "Technologie entwickelt sich – ich mich auch",
                 "Ich verwandle Ideen in funktionierende Lösungen"

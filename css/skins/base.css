@@ -1,14 +1,14 @@
-.aside .logo a::before{
+.aside .logo a::before {
     border-top: 4px solid #5170ff;
     border-left: 4px solid #5170ff;
 }
 
-.aside .logo a::after{
+.aside .logo a::after {
     border-right: 4px solid #5170ff;
     border-bottom: 4px solid #5170ff;
 }
 
-.aside .nav li a:hover, 
+.aside .nav li a:hover,
 body.dark .aside .nav li a:hover,
 .blog .blog-item-inner .blog-info .blog-tags a,
 .portfolio .portfolio-item .portfolio-info .icon .fa,
@@ -21,7 +21,7 @@ body.dark .aside .nav li a:hover,
 body.dark .portfolio .portfolio-filter button.active,
 .service .service-item .service-item-inner .icon .fa,
 body.dark .aside .nav li a.active,
-.aside .nav li a.active{
+.aside .nav li a.active {
     color: #5170ff;
 }
 
@@ -37,10 +37,10 @@ body.dark .aside .nav li a.active,
 .aside .nav-toggler span::before,
 .aside .nav-toggler span::after,
 .bubble-wrapper .skill-bubble,
-.home .intro .social-links a{
+.home .intro .social-links a {
     background-color: #5170ff;
 }
 
-.portfolio .portfolio-filter button.active{
+.portfolio .portfolio-filter button.active {
     border-color: #5170ff;
 }
